@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2175d01dced61b54eae21bb8597a78eb
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 186948
+  packageName: Nikan Hair and Beard Male from Tafi
+  packageVersion: 1.3
+  assetPath: Assets/Tafi/Shaders/ShaderSets/URP 7.3/IrayUberGeneral - Universal.shader
+  uploadId: 443046
