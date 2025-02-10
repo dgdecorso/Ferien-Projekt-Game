@@ -200,6 +200,7 @@ logs
 **/*.backup.*
 **/*.back.*
 *Library/
+*Temp/
 node_modules
 bower_components
 
