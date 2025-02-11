@@ -2,6 +2,13 @@ fileFormatVersion: 2
 guid: 5277e5180e302184fb73653674a14c85
 labels:
 - Animation
+AssetOrigin:
+  serializedVersion: 1
+  productId: 154271
+  packageName: Basic Motions FREE
+  packageVersion: 2.3.2
+  assetPath: Assets/Kevin Iglesias/Basic Motions/Animations/Male/Social/Conversation/HumanM@Talk01.fbx
+  uploadId: 726948
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -18,11 +25,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
-      copied configuration does not match position in animation file:\n\t'B-thigh.L'
-      : position error = 9.506036 mm\n\t'B-toe.L' : position error = 15.481692 mm\n\t'B-thigh.R'
-      : position error = 9.507245 mm\n\t'B-toe.R' : position error = 15.484296 mm\n"
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -49,7 +51,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
@@ -835,8 +837,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 0e1e29b35a3700748811d120b13ed8d6,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 0e1e29b35a3700748811d120b13ed8d6, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
@@ -848,10 +849,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 154271
-  packageName: Basic Motions FREE
-  packageVersion: 2.3.2
-  assetPath: Assets/Kevin Iglesias/Basic Motions/Animations/Male/Social/Conversation/HumanM@Talk01.fbx
-  uploadId: 726948
