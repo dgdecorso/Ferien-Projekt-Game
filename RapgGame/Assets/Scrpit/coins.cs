@@ -2,25 +2,26 @@ using UnityEngine;
 
 public class coins : MonoBehaviour
 {
-    private int coin = 0;
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Coint"))  // Fixed typo
+        if (other.CompareTag("Coint"))  // ✅ Stellt sicher, dass das Item richtig erkannt wird!
         {
-            coin++;
-            Debug.Log("Coins collected: " + coin);
+            Debug.Log("✅ Coin eingesammelt: " + other.gameObject.name);
 
-            Destroy(other.gameObject);
+            Destroy(other.gameObject); // ✅ Entfernt das eingesammelte Item
 
             if (Collection.instance != null)
             {
-                Collection.instance.IncreaseItems(1); // Pass the missing argument
+                Collection.instance.IncreaseItems(1); // ✅ Erhöht den Counter in Collection.cs
             }
             else
             {
-                Debug.LogError("Collection.instance is null. Make sure the Collection script is in the scene.");
+                Debug.LogError("❌ Collection.instance ist NULL! Stelle sicher, dass 'Collection' in der Szene ist.");
             }
+        }
+        else
+        {
+           
         }
     }
 }

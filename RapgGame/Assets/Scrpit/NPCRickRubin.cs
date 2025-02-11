@@ -1,20 +1,24 @@
+using System;
 using UnityEngine;
-using UnityEngine.UI; // ✅ Required for UI Text
-using System.Collections;
-using System.Collections.Generic;
 
-public class Coins : MonoBehaviour {
-    public Text displayText; // UI Text element
+public class NPCRickRubin : MonoBehaviour, IInteractable
+{
+    public Dialogue dialogue; // ✅ Reference to Dialogue Script
 
     public void Interact()
     {
-        if (displayText != null) {
-            displayText.text = "Whatever you want to display";
-        } else {
-            Debug.LogError("displayText is not assigned in the Inspector!");
+        Debug.Log("✅ You interacted with: " + gameObject.name);
+
+        if (dialogue != null)
+        {
+            Debug.Log("✅ Dialogue Found! Starting Rick Rubin Dialogue...");
+            dialogue.gameObject.SetActive(true);
+            gameObject.SetActive(true); // ✅ Make sure it starts disabled
+
+        }
+        else
+        {
+            Debug.LogError("❌ Dialogue script is MISSING on " + gameObject.name);
         }
     }
-
-    void Start() { }
-    void Update() { }
 }
