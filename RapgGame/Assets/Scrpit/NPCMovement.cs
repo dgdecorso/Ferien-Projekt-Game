@@ -47,11 +47,18 @@ public class NPCMovement : MonoBehaviour
     }
 
     void Update()
+{
+    if (!randomPatrol && agent.remainingDistance < 0.5f)
     {
-        if (!randomPatrol && agent.remainingDistance < 0.5f) // ✅ If close to waypoint, go to next
-        {
-            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
-            MoveToWaypoint();
-        }
+        currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
+        MoveToWaypoint();
     }
+
+    // ✅ Make the NPC face the movement direction
+    if (agent.velocity.magnitude > 0.1f) // Only rotate if moving
+    {
+        transform.forward = agent.velocity.normalized; // ✅ Rotate NPC to face direction
+    }
+}
+
 }

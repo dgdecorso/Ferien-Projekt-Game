@@ -59,12 +59,13 @@
     <UnityVersion>6000.0.36f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\dgdec\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.5\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\dgdec\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\simple modular human 1\scripts\clothing.cs" />
     <Compile Include="Assets\Scrpit\Dialogue.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder2D.cs" />
     <Compile Include="Assets\Scrpit\Menu.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Kevin Iglesias\Basic Motions\DemoScene\Scripts\BasicMotionsCamera.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\LightComponent.cs" />
     <Compile Include="Assets\Scrpit\GameAssets.cs" />
+    <Compile Include="Assets\Scrpit\RapperScript2.cs" />
     <Compile Include="Assets\Kevin Iglesias\Basic Motions\DemoScene\Scripts\BasicMotionsCharacterController.cs" />
     <Compile Include="Assets\Scrpit\InteractObject.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\SphereExploder.cs" />
@@ -81,7 +83,6 @@
     <Compile Include="Assets\Scrpit\TextWriter.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent2D.cs" />
     <Compile Include="Assets\Kevin Iglesias\Basic Motions\DemoScene\Scripts\BasicMotionsAnimatorStateChanger.cs" />
-    <Compile Include="Assets\simple modular human\scripts\Test_script.cs" />
     <Compile Include="Assets\Scrpit\ChatBubble3D.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ExploderComponent.cs" />
     <Compile Include="Assets\Scrpit\InteractScript.cs" />
@@ -91,7 +92,6 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scrpit\NPCSpawner.cs" />
     <Compile Include="Assets\HQ Explosions Pack FREE\Scripts\changeEffects.cs" />
-    <Compile Include="Assets\simple modular human\scripts\clothing.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\PseudoVolumetricExplosion.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
@@ -99,14 +99,16 @@
     <Compile Include="Assets\Scrpit\NPCMovement.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ParticleComponent.cs" />
     <Compile Include="Assets\Record_player\Scripts\RecordPlayer.cs" />
+    <Compile Include="Assets\Scrpit\CarController.cs" />
     <Compile Include="Assets\Scrpit\InteractUI.cs" />
     <Compile Include="Assets\Scrpit\map.cs" />
+    <Compile Include="Assets\simple modular human 1\scripts\Test_script.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Tafi\Shaders\ShaderSets\Standard 2018\Hair mark 9\DitherFunctions.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\simple modular human\readMe.txt" />
+    <None Include="Assets\simple modular human 1\readMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Tafi\Shaders\ShaderSets\HDRP 7.3\Invisible.shader" />
     <None Include="Assets\Tafi\Shaders\ShaderSets\Standard 2018\IrayUberGeneral - StandardPipeline.shader" />
@@ -1143,6 +1145,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Cinemachine.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Cinemachine.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
       <Private>False</Private>
@@ -1179,12 +1185,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Center.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>Library\ScriptAssemblies\Unity.Splines.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Unity.Cinemachine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Collections">
@@ -1205,6 +1219,10 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Splines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Splines.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
