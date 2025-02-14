@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\simple modular human 1\scripts\clothing.cs" />
+    <Compile Include="Assets\Scrpit\CarControllS.cs" />
     <Compile Include="Assets\Scrpit\Dialogue.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder2D.cs" />
     <Compile Include="Assets\Scrpit\Menu.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scrpit\PlayerConvo.cs" />
     <Compile Include="Assets\Kevin Iglesias\Basic Motions\DemoScene\Scripts\BasicMotionsCamera.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\LightComponent.cs" />
+    <Compile Include="Assets\Scrpit\carController.cs" />
     <Compile Include="Assets\Scrpit\GameAssets.cs" />
     <Compile Include="Assets\Scrpit\RapperScript2.cs" />
     <Compile Include="Assets\Kevin Iglesias\Basic Motions\DemoScene\Scripts\BasicMotionsCharacterController.cs" />
@@ -99,7 +101,7 @@
     <Compile Include="Assets\Scrpit\NPCMovement.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ParticleComponent.cs" />
     <Compile Include="Assets\Record_player\Scripts\RecordPlayer.cs" />
-    <Compile Include="Assets\Scrpit\CarController.cs" />
+    <Compile Include="Assets\Scrpit\ItemSwitcher.cs" />
     <Compile Include="Assets\Scrpit\InteractUI.cs" />
     <Compile Include="Assets\Scrpit\map.cs" />
     <Compile Include="Assets\simple modular human 1\scripts\Test_script.cs" />
@@ -122,6 +124,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Tafi\Shaders\ShaderSets\Standard 2018\Hair mark 9\AlphaTest-VertexLit.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\Lana Studio\Hyper Casual FX\Demo\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
